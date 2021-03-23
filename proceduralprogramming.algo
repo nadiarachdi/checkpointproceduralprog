@@ -1,0 +1,47 @@
+ALGORITHM procedure
+VAR
+    
+BEGIN
+PROCEDURE procedure_name(var v1,v2: ARRAY_OF INTEGER[5];)
+VAR
+    ps : INTEGER;
+    i,j:INTEGER;
+BEGIN
+     
+     ps:=0;
+     FOR i FROM 0 TO v1.length STEP 1  DO
+        FOR j FROM 0 TO v2.length STEP 1  DO
+            
+            ps:=v1[i]*v2[j]
+            IF (ps=0) THEN
+                write(v1[i]" and ", v2[j] " are rothogonal")
+            END_IF
+        END_FOR
+    END_FOR
+END
+   
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
